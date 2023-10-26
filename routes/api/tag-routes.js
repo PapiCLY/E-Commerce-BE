@@ -17,7 +17,7 @@ router.get('/', (req, res) => {
 
 
 router.get('/:id', (req, res) => {
-  Tag.fineOne({
+  Tag.findOne({
     where: {
       id: req.params.id
     },
